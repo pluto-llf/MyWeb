@@ -1,0 +1,32 @@
+#nav{
+    width: 300px;
+    background-color: whitesmoke;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 35px;
+    /* background: chocolate;
+    background-image: url("../images/箭头下蓝色.gif") 200px 10px ;
+    background-repeat: repeat; */
+    background: red url("../images/箭头下.png") 200px 10px ;
+}
+/* ul{
+    background: whitesmoke;
+} */
+
+ul li{
+    height: 30px;
+    list-style: none;
+    text-indent: 1em;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: tomato;
+    text-decoration: underline;
+}
