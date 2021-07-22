@@ -488,7 +488,7 @@ img,span{
 		color:red
 	}
 </style>
-123456789101112131415
+
 ```
 
 阴影：
@@ -558,7 +558,7 @@ background-position：/*定位：背景位置*/
 
 ## 3.8、渐变
 
-网址：https://www.grablent.com
+网址：https://www.grabient.com
 径向渐变、圆形渐变
 
 # 4、盒子模型
@@ -571,6 +571,20 @@ background-position：/*定位：背景位置*/
 
 ## 4.2、边框
 
+body总是有一个默认的外边距，可以设置为0,常见操作：
+
+```css
+h1,ul,li,a,body{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+```
+
+设置后可以顶完所有的页面
+
+
+
 border：粗细 样式 颜色
 
 1. 边框的粗细
@@ -581,6 +595,8 @@ border：粗细 样式 颜色
 
 margin-left/right/top/bottom–>表示四边，可分别设置，也可以同时设置如下
 
+margin:0 auto  **要求**：块元素，块元素有固定的宽度
+
 ```css
 margin:0 0 0 0/*分别表示上、右、下、左；从上开始顺时针*/
 /*例1：居中*/
@@ -589,7 +605,7 @@ margin:0 auto /*auto表示左右自动*/
 margin:4px/*表示上、右、下、左都为4px*/
 /*例3*/
 margin:10px 20px 30px/*表示上为10px，左右为20px，下为30px*/
-1234567
+
 ```
 
 盒子的计算方式：
@@ -603,7 +619,6 @@ body总有一个默认的外边距 margin:0
 margin:0;
 padding:0;
 text-decoration:none;
-123
 ```
 
 ## 4.4、圆角边框----border-radius
@@ -613,14 +628,40 @@ border-radius有四个参数（顺时针），左上开始
 
 ## 4.5、盒子阴影
 
+图片在盒子内想要居中，父盒子需要有确定的宽和高。
+
+图片本身需要是块元素。
+
+```css
+div{
+    width: 300px;
+    margin: 0 auto;			//盒子居中
+}
+img{
+     display: block;
+}
+```
+
+
+
 # 5、浮动
 
 ## 5.1标准文档流
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200507094752916.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Bhbl9oMTk5NQ==,size_16,color_FFFFFF,t_70)
 
-块级元素：独占一行 h1~h6 、p、div、 列表…
-行内元素：不独占一行 span、a、img、strong
+块级元素：独占一行
+
+```
+h1~h6  p  div  列表…
+```
+
+
+行内元素：不独占一行 
+
+```html
+span a  img  strong.....
+```
 
 > 注： 行内元素可以包含在块级元素中，反之则不可以。
 

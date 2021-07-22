@@ -7,10 +7,10 @@
     font-weight: bold;
     text-indent: 1em;
     line-height: 35px;
-    background: chocolate;
-    background-image: url("../images/箭头下蓝色.gif") 200px 10px ;
-    background-repeat: repeat;
-    background: red url("../images/截图.png") 200px 10px ;
+    /* background: chocolate;
+    background-image: url("../images/箭头下蓝色.gif") 200px 10px ; */
+    /* background-repeat: no-repeat; */
+    background: red url("../images/箭头下.") 270px 10px no-repeat;
 }
 /* ul{
     background: whitesmoke;
@@ -21,6 +21,9 @@ ul li{
     list-style: none;
     text-indent: 1em;
     font-size: 14px;
+    background-image: url(../images/箭头右.png);
+    background-position: 150px 2px;
+    background-repeat: no-repeat;
 }
 
 a{
