@@ -1,0 +1,49 @@
+body{
+    padding: 10px;
+}
+.all{
+    border: red solid 2px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+.one,.two,.three,.four,.five{
+    background: pink;
+    color: whitesmoke;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: ivory;
+    line-height: 100px;
+}
+.all div:hover{
+    background: blue;
+}
+.two,.four{
+    float: right;
+}
+.one,.two{
+    display: inline-block;
+}
+.three,.four{
+    display: inline-block;
+}
+/* 位置 */
+.one{
+    left: -50px;
+}
+.five{
+    bottom: 100px;
+}
+.three{
+    left: -50px;
+    bottom: -100px;
+}
+.four{
+    bottom: -100px;
+}
